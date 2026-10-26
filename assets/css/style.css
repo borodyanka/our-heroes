@@ -1,24 +1,23 @@
-/* Базові стилі та кольорова гама у стилістиці порталу bsr.gov.ua */
+/* М'який сірувато-сталевий світлий дизайн для меморіалу */
 body {
-    background-color: #071326; /* Глибокий темно-синій фон адміністративного порталу */
-    color: #f8fafc;
+    background-color: #f1f5f9; /* М'який світлий сіро-блакитний сталевий відтінок */
+    color: #1e293b;
     font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Оригінальні картки героїв (збережено твою структуру та hover-ефекти) */
+/* Картки героїв (зберігаємо твою форму, але у світлій благородній гамі) */
 .hero-card {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    background-color: #0b1d3a;
-    border-color: #1b365d;
+    background-color: #ffffff;
+    border-color: #e2e8f0;
 }
 
 .hero-card:hover {
     transform: translateY(-4px);
-    border-color: #f59e0b;
-    box-shadow: 0 10px 25px -5px rgba(245, 158, 11, 0.1);
+    border-color: #94a3b8;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
 }
 
-/* Плавні переходи для інтерактивних елементів */
 input, button {
     transition: all 0.2s ease;
-} 
+}
