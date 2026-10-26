@@ -11,7 +11,7 @@ const heroesData = [
         motto: "Вічна слава, честь та шана герою-захиснику!",
         photo: "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=400&q=80"
     },
-    { 
+    {
         id: 2,
         name: "Олексій Постнов",
         type: "military",
@@ -63,7 +63,7 @@ function renderCards(data) {
 
                 <div>
                     <!-- Фото -->
-                    <div class="w-28 h-28 mx-auto mb-4 rounded-full overflow-hidden border-2 ${isMilitary ? 'border-[#333333]' : 'border-[#888888]} bg-[#ededeb]">
+                    <div class="w-28 h-28 mx-auto mb-4 rounded-full overflow-hidden border-2 ${isMilitary ? 'border-[#333333]' : 'border-[#888888]'} bg-[#ededeb]">
                         <img src="${photoSrc}" alt="${hero.name}" class="w-full h-full object-cover grayscale contrast-125">
                     </div>
 

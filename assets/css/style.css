@@ -4,7 +4,7 @@ body {
     color: #1a1a1a;
 }
 
-/* Картки героїв (зберігають твою ідеальну форму, оформлені у книжковому стилі) */
+/* Картки героїв (зберігають ідеальну форму, оформлені у книжковому стилі) */
 .hero-card {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     background-color: #ffffff;

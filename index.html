@@ -87,7 +87,7 @@
             </div>
         </div>
 
-        <!-- Сітка карток (збережена ідеальна форма карток) -->
+        <!-- Сітка карток -->
         <div id="heroesGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 font-sans">
             <!-- Картки генеруються через JS -->
         </div>
@@ -97,29 +97,21 @@
             <p class="text-lg italic">За вказаним запитом мешканців не знайдено.</p>
         </div>
 
-        <!-- Додатковий інформаційний блок у кінці -->
-        <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 border-t border-[#d8d6d0] pt-10 font-sans">
-            <div class="bg-[#fcfbfa] p-5 rounded-xl border border-[#d8d6d0] shadow-sm space-y-2">
+        <!-- Додатковий інформаційний блок у кінці (рівно два блоки на половину екрана) -->
+        <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6 border-t border-[#d8d6d0] pt-10 font-sans">
+            <div class="bg-[#fcfbfa] p-6 rounded-xl border border-[#d8d6d0] shadow-sm space-y-3">
                 <h3 class="text-[#1a1a1a] font-serif font-bold text-sm uppercase flex items-center gap-2">
                     <i class="fa-solid fa-book-open text-[#666666]"></i> Пам'ять громади
                 </h3>
-                <p class="text-xs text-[#666666] leading-relaxed">
+                <p class="text-xs md:text-sm text-[#666666] leading-relaxed">
                     Офіційний меморіальний простір Бородянської селищної ради для увічнення пам'яті полеглих земляків.
                 </p>
             </div>
-            <div class="bg-[#fcfbfa] p-5 rounded-xl border border-[#d8d6d0] shadow-sm space-y-2">
-                <h3 class="text-[#1a1a1a] font-serif font-bold text-sm uppercase flex items-center gap-2">
-                    <i class="fa-solid fa-triangle-exclamation text-[#666666]"></i> Безпека та перевірка
-                </h3>
-                <p class="text-xs text-[#666666] leading-relaxed">
-                    У разі виявлення вибухонебезпечних предметів — не чіпайте їх. Надсилайте повідомлення на <b>press@bsr.gov.ua</b> з поміткою "на перевірку".
-                </p>
-            </div>
-            <div class="bg-[#fcfbfa] p-5 rounded-xl border border-[#d8d6d0] shadow-sm space-y-2">
+            <div class="bg-[#fcfbfa] p-6 rounded-xl border border-[#d8d6d0] shadow-sm space-y-3">
                 <h3 class="text-[#1a1a1a] font-serif font-bold text-sm uppercase flex items-center gap-2">
                     <i class="fa-solid fa-link text-[#666666]"></i> Офіційні ресурси
                 </h3>
-                <ul class="text-xs text-[#666666] space-y-1">
+                <ul class="text-xs md:text-sm text-[#666666] space-y-1.5">
                     <li><a href="https://bsr.gov.ua/" target="_blank" class="hover:text-black transition-colors">→ Офіційний сайт Бородянської громади</a></li>
                     <li><a href="https://bsr.gov.ua/category/novyny" target="_blank" class="hover:text-black transition-colors">→ Новини та оголошення</a></li>
                     <li><a href="https://bsr.gov.ua/category/kontakty" target="_blank" class="hover:text-black transition-colors">→ Контакти селищної ради</a></li>
@@ -137,7 +129,7 @@
         </div>
     </footer>
 
-    <!-- Скрипт логіки -->
+    <!-- Скрипт логіки (правильний шлях до папки assets/js/) -->
     <script src="assets/js/script.js"></script>
 </body>
 </html>
