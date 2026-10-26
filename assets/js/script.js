@@ -11,7 +11,7 @@ const heroesData = [
         motto: "Вічна слава, честь та шана герою-захиснику!",
         photo: "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=400&q=80"
     },
-    {
+    { 
         id: 2,
         name: "Олексій Постнов",
         type: "military",
