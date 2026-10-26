@@ -1,21 +1,20 @@
-/* М'який сірувато-сталевий світлий дизайн для меморіалу */
+/* Книжковий меморіальний дизайн (імітація друкованого видання та паперу) */
 body {
-    background-color: #f1f5f9; /* М'який світлий сіро-блакитний сталевий відтінок */
-    color: #1e293b;
-    font-family: system-ui, -apple-system, sans-serif;
+    background-color: #f5f4ef; /* М'який теплий книжковий папір */
+    color: #1a1a1a;
 }
 
-/* Картки героїв (зберігаємо твою форму, але у світлій благородній гамі) */
+/* Картки героїв (зберігають твою ідеальну форму, оформлені у книжковому стилі) */
 .hero-card {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     background-color: #ffffff;
-    border-color: #e2e8f0;
+    border-color: #d8d6d0;
 }
 
 .hero-card:hover {
-    transform: translateY(-4px);
-    border-color: #94a3b8;
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+    transform: translateY(-3px);
+    border-color: #999999;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.04);
 }
 
 input, button {

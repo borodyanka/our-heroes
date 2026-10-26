@@ -51,34 +51,34 @@ function renderCards(data) {
 
     data.forEach(hero => {
         const isMilitary = hero.type === 'military';
-        const photoSrc = hero.photo ? hero.photo : 'https://via.placeholder.com/400x400/e2e8f0/64748b?text=Фото+відсутнє';
+        const photoSrc = hero.photo ? hero.photo : 'https://via.placeholder.com/400x400/ededeb/777777?text=Фото+відсутнє';
 
         const cardHtml = `
             <div class="hero-card border rounded-2xl overflow-hidden flex flex-col justify-between p-5 relative shadow-sm">
                 
                 <!-- Значок -->
-                <div class="absolute top-4 right-4 bg-slate-100 p-2 rounded-full border border-slate-200">
+                <div class="absolute top-4 right-4 bg-[#f7f6f2] p-2 rounded-full border border-[#d8d6d0]">
                     ${isMilitary ? '⚔️' : '🕯️'}
                 </div>
 
                 <div>
                     <!-- Фото -->
-                    <div class="w-28 h-28 mx-auto mb-4 rounded-full overflow-hidden border-2 ${isMilitary ? 'border-slate-700' : 'border-slate-400'} bg-slate-100">
+                    <div class="w-28 h-28 mx-auto mb-4 rounded-full overflow-hidden border-2 ${isMilitary ? 'border-[#333333]' : 'border-[#888888]} bg-[#ededeb]">
                         <img src="${photoSrc}" alt="${hero.name}" class="w-full h-full object-cover grayscale contrast-125">
                     </div>
 
                     <!-- Інформація -->
                     <div class="text-center">
-                        <h3 class="text-lg font-bold text-slate-900 mb-1">${hero.name}</h3>
-                        ${hero.callsign ? `<p class="text-xs text-slate-600 font-semibold mb-2">Позивний «${hero.callsign}»</p>` : ''}
-                        <p class="text-xs text-slate-600 font-medium mb-1">${hero.age} (${hero.dates})</p>
-                        <p class="text-xs text-slate-500 mb-4">${hero.unit}</p>
+                        <h3 class="text-lg font-serif font-bold text-[#1a1a1a] mb-1">${hero.name}</h3>
+                        ${hero.callsign ? `<p class="text-xs text-[#555555] font-semibold mb-2">Позивний «${hero.callsign}»</p>` : ''}
+                        <p class="text-xs text-[#666666] font-medium mb-1">${hero.age} (${hero.dates})</p>
+                        <p class="text-xs text-[#888888] mb-4">${hero.unit}</p>
                     </div>
                 </div>
 
                 <!-- Шана -->
-                <div class="border-t border-slate-100 pt-3 text-center">
-                    <span class="text-[11px] uppercase tracking-wider text-slate-700 font-semibold">
+                <div class="border-t border-[#ededeb] pt-3 text-center">
+                    <span class="text-[11px] uppercase tracking-wider text-[#444444] font-semibold">
                         ${hero.motto}
                     </span>
                 </div>
@@ -101,9 +101,9 @@ function filterCategory(category) {
     ['all', 'military', 'civilian'].forEach(cat => {
         const btn = document.getElementById(`btn-${cat}`);
         if (cat === category) {
-            btn.className = 'px-4 py-2 text-xs md:text-sm font-medium rounded-lg bg-slate-800 text-white shadow-sm';
+            btn.className = 'px-4 py-2 text-xs md:text-sm font-medium rounded-lg bg-[#2c2c2c] text-white shadow-sm';
         } else {
-            btn.className = 'px-4 py-2 text-xs md:text-sm font-medium rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-300 transition-colors';
+            btn.className = 'px-4 py-2 text-xs md:text-sm font-medium rounded-lg bg-white text-[#444444] hover:bg-[#ededeb] border border-[#cccccc] transition-colors';
         }
     });
 
