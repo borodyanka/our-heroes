@@ -3,34 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Книга Пам'яті — Наші Герої</title>
-    <!-- Tailwind CSS для стилів -->
+    <title>Книга Пам'яті — Бородянська селищна територіальна громада</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        body {
-            background-color: #0f172a;
-            color: #f8fafc;
-            font-family: system-ui, -apple-system, sans-serif;
-        }
-        .hero-card {
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-        .hero-card:hover {
-            transform: translateY(-4px);
-        }
-    </style>
+    <!-- Підключення стилів у стилістиці bsr.gov.ua -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="min-h-screen flex flex-col justify-between">
 
+    <!-- Верхня інформаційна панель громади -->
+    <div class="bg-[#071326] text-slate-300 text-xs py-2 border-b border-[#1b365d]">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-location-dot text-amber-500"></i>
+                <span>Бучанський район, Київська область, смт Бородянка, вул. Центральна, 331</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="mailto:press@bsr.gov.ua" class="hover:text-amber-400 transition-colors"><i class="fa-solid fa-envelope mr-1"></i> press@bsr.gov.ua</a>
+                <a href="https://bsr.gov.ua" target="_blank" class="hover:text-amber-400 transition-colors"><i class="fa-solid fa-globe mr-1"></i> Офіційний портал bsr.gov.ua</a>
+            </div>
+        </div>
+    </div>
+
     <!-- Шапка сайту (Header) -->
-    <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 py-6 text-center">
-            <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-amber-500 uppercase flex items-center justify-center gap-3">
-                <span>🕯️</span> Книга Пам'яті
-            </h1>
-            <p class="text-slate-400 mt-2 text-sm md:text-base max-w-2xl mx-auto">
-                Вічна слава, честь та шана героям-захисникам і цивільним мешканцям, які віддали життя за Україну.
+    <header class="border-b border-[#1b365d] bg-[#0b1d3a] backdrop-blur sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-5 text-center">
+            <div class="flex items-center justify-center gap-3 mb-1">
+                <span class="text-3xl">🇺🇦</span>
+                <h1 class="text-2xl md:text-3xl font-bold tracking-tight text-amber-400 uppercase">
+                    Книга Пам'яті Бородянщини
+                </h1>
+            </div>
+            <p class="text-slate-300 text-xs md:text-sm max-w-2xl mx-auto font-medium">
+                Вічна пам’ять і слава захисникам України та мирним мешканцям Бородянської об'єднаної територіальної громади, життя яких обірвала російська агресія.
             </p>
         </div>
     </header>
@@ -38,179 +44,95 @@
     <!-- Основний контент -->
     <main class="max-w-7xl mx-auto px-4 py-8 flex-grow w-full">
         
+        <!-- Верхній інформаційний блок громади -->
+        <div class="mb-8 bg-[#0b1d3a] border border-[#1b365d] rounded-xl p-5 shadow-lg flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="space-y-1 text-center md:text-left">
+                <h2 class="text-sm font-semibold uppercase tracking-wider text-amber-400">Шановні мешканці громади</h2>
+                <p class="text-xs text-slate-300">Триває збір та уточнення інформації про героїв та жителів Бородянщини. Якщо ви маєте додаткові дані або фотографії, надсилайте їх на офіційну пошту з поміткою «на перевірку».</p>
+            </div>
+            <a href="mailto:press@bsr.gov.ua?subject=На%20перевірку%20-%20Книга%20пам'яті" class="whitespace-nowrap bg-amber-500 hover:bg-amber-400 text-[#071326] font-bold text-xs uppercase px-4 py-2.5 rounded-lg transition-colors shadow">
+                <i class="fa-solid fa-paper-plane mr-1.5"></i> Додати інформацію
+            </a>
+        </div>
+
         <!-- Панель пошуку та фільтрів -->
-        <div class="mb-10 flex flex-col md:flex-row gap-4 justify-between items-center bg-slate-900 p-4 rounded-xl border border-slate-800">
+        <div class="mb-10 flex flex-col md:flex-row gap-4 justify-between items-center bg-[#0b1d3a] p-4 rounded-xl border border-[#1b365d]">
             <!-- Пошук -->
             <div class="relative w-full md:w-96">
-                <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-slate-500"></i>
+                <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"></i>
                 <input 
                     type="text" 
                     id="searchInput" 
                     placeholder="Пошук за прізвищем або позивним..." 
-                    class="w-full bg-slate-950 border border-slate-700 rounded-lg pl-10 pr-4 py-2 text-sm focus:outline-none focus:border-amber-500 transition-colors"
+                    class="w-full bg-[#071326] border border-[#1b365d] rounded-lg pl-10 pr-4 py-2 text-sm text-slate-100 focus:outline-none focus:border-amber-500 transition-colors"
                 >
             </div>
 
             <!-- Фільтри -->
             <div class="flex gap-2 w-full md:w-auto justify-center">
-                <button onclick="filterCategory('all')" id="btn-all" class="px-4 py-2 text-xs md:text-sm font-medium rounded-lg bg-amber-500 text-slate-950 hover:bg-amber-400 transition-colors">
-                    Усі
+                <button onclick="filterCategory('all')" id="btn-all" class="px-4 py-2 text-xs md:text-sm font-medium rounded-lg bg-amber-500 text-[#071326] hover:bg-amber-400 transition-colors shadow">
+                    Усі записи
                 </button>
-                <button onclick="filterCategory('military')" id="btn-military" class="px-4 py-2 text-xs md:text-sm font-medium rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 transition-colors">
+                <button onclick="filterCategory('military')" id="btn-military" class="px-4 py-2 text-xs md:text-sm font-medium rounded-lg bg-[#142d54] text-slate-300 hover:bg-[#1b365d] transition-colors border border-[#1b365d]">
                     Захисники
                 </button>
-                <button onclick="filterCategory('civilian')" id="btn-civilian" class="px-4 py-2 text-xs md:text-sm font-medium rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 transition-colors">
-                    Цивільні
+                <button onclick="filterCategory('civilian')" id="btn-civilian" class="px-4 py-2 text-xs md:text-sm font-medium rounded-lg bg-[#142d54] text-slate-300 hover:bg-[#1b365d] transition-colors border border-[#1b365d]">
+                    Цивільні мешканці
                 </button>
             </div>
         </div>
 
-        <!-- Сітка карток -->
+        <!-- Сітка карток (оригінальна форма карток) -->
         <div id="heroesGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            <!-- Картки будуть згенеровані через JavaScript -->
+            <!-- Картки генеруються через JS -->
         </div>
 
         <!-- Повідомлення, якщо нікого не знайдено -->
-        <div id="notFound" class="hidden text-center py-16 text-slate-500">
-            <p class="text-lg">За вказаним запитом нікого не знайдено.</p>
+        <div id="notFound" class="hidden text-center py-16 text-slate-400">
+            <p class="text-lg">За вказаним запитом мешканців не знайдено.</p>
         </div>
+
+        <!-- Додатковий інформаційний блок у кінці під стилістику громади -->
+        <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 border-t border-[#1b365d] pt-10">
+            <div class="bg-[#0b1d3a] p-5 rounded-xl border border-[#1b365d] space-y-2">
+                <h3 class="text-amber-400 font-bold text-sm uppercase flex items-center gap-2">
+                    <i class="fa-solid fa-shield-halved"></i> Пам'ять громади
+                </h3>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                    Створено за підтримки Бородянської селищної ради для збереження історичної пам'яті про кожного загиблого мешканця нашої громади.
+                </p>
+            </div>
+            <div class="bg-[#0b1d3a] p-5 rounded-xl border border-[#1b365d] space-y-2">
+                <h3 class="text-amber-400 font-bold text-sm uppercase flex items-center gap-2">
+                    <i class="fa-solid fa-triangle-exclamation"></i> Увага до безпеки
+                </h3>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                    У разі виявлення невідомих підозрілих предметів чи вибухонебезпечних залишків — не відкривати, звертатися на пошту <b>press@bsr.gov.ua</b> з поміткою "на перевірку".
+                </p>
+            </div>
+            <div class="bg-[#0b1d3a] p-5 rounded-xl border border-[#1b365d] space-y-2">
+                <h3 class="text-amber-400 font-bold text-sm uppercase flex items-center gap-2">
+                    <i class="fa-solid fa-link"></i> Корисні розділи
+                </h3>
+                <ul class="text-xs text-slate-300 space-y-1">
+                    <li><a href="https://bsr.gov.ua/" target="_blank" class="hover:text-amber-400 transition-colors">→ Офіційний сайт Бородянської громади</a></li>
+                    <li><a href="https://bsr.gov.ua/category/novyny" target="_blank" class="hover:text-amber-400 transition-colors">→ Новини та оголошення</a></li>
+                    <li><a href="https://bsr.gov.ua/category/kontakty" target="_blank" class="hover:text-amber-400 transition-colors">→ Контакти селищної ради</a></li>
+                </ul>
+            </div>
+        </div>
+
     </main>
 
     <!-- Підвал (Footer) -->
-    <footer class="border-t border-slate-800 bg-slate-950 py-6 text-center text-xs text-slate-500">
-        <div class="max-w-7xl mx-auto px-4">
-            <p>© <span id="year"></span> Книга Пам'яті громади. Пам'ятаємо кожного.</p>
+    <footer class="border-t border-[#1b365d] bg-[#071326] py-6 text-center text-xs text-slate-400">
+        <div class="max-w-7xl mx-auto px-4 space-y-2">
+            <p>© <span id="year"></span> Бородянська селищна територіальна громада. Усі права захищені.</p>
+            <p class="text-[11px] text-slate-300">Офіційний меморіальний проєкт пам'яті героїв та мешканців.</p>
         </div>
     </footer>
 
-    <!-- Скрипт логіки та даних -->
-    <script>
-        // База даних (приклад кількох записів)
-        const heroesData = [
-            {
-                id: 1,
-                name: "Микола Бернацький",
-                type: "military",
-                callsign: "",
-                dates: "07.02.1983 - 04.11.2023",
-                age: "40 років",
-                unit: "Захисник України",
-                motto: "Вічна слава, честь та шана герою-захиснику!",
-                photo: "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=400&q=80" // Заглушка
-            },
-            {
-                id: 2,
-                name: "Олексій Постнов",
-                type: "military",
-                callsign: "Пірат",
-                dates: "21.10.1987 - 18.04.2023",
-                age: "35 років",
-                unit: "В/ч А4010 ЗСУ",
-                motto: "Вічна слава, честь та шана герою-захиснику!",
-                photo: "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=400&q=80"
-            },
-            {
-                id: 3,
-                name: "Григорій Салій",
-                type: "civilian",
-                callsign: "",
-                dates: "08.02.1959 - 18.03.2022",
-                age: "63 роки",
-                unit: "Цивільний мешканець",
-                motto: "Світла памʼять! Громада не забуде!",
-                photo: "" // Порожнє фото (відобразиться заглушка)
-            }
-        ];
-
-        let currentFilter = 'all';
-
-        function renderCards(data) {
-            const grid = document.getElementById('heroesGrid');
-            const notFound = document.getElementById('notFound');
-            grid.innerHTML = '';
-
-            if (data.length === 0) {
-                notFound.classList.remove('hidden');
-                return;
-            } else {
-                notFound.classList.add('hidden');
-            }
-
-            data.forEach(hero => {
-                const isMilitary = hero.type === 'military';
-                const photoSrc = hero.photo ? hero.photo : 'https://via.placeholder.com/400x400/1e293b/94a3b8?text=Фото+відсутнє';
-
-                const cardHtml = `
-                    <div class="hero-card bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between p-5 relative shadow-lg">
-                        
-                        <!-- Значок ЗСУ / Символ -->
-                        <div class="absolute top-4 right-4 bg-slate-950/80 p-2 rounded-full border border-slate-700/50">
-                            ${isMilitary ? '⚔️' : '🕯️'}
-                        </div>
-
-                        <div>
-                            <!-- Фото -->
-                            <div class="w-28 h-28 mx-auto mb-4 rounded-full overflow-hidden border-2 ${isMilitary ? 'border-amber-500' : 'border-slate-600'} bg-slate-800">
-                                <img src="${photoSrc}" alt="${hero.name}" class="w-full h-full object-cover grayscale contrast-125">
-                            </div>
-
-                            <!-- Інформація -->
-                            <div class="text-center">
-                                <h3 class="text-lg font-bold text-slate-100 mb-1">${hero.name}</h3>
-                                ${hero.callsign ? `<p class="text-xs text-amber-400 font-semibold mb-2">Позивний «${hero.callsign}»</p>` : ''}
-                                <p class="text-xs text-slate-400 font-medium mb-1">${hero.age} (${hero.dates})</p>
-                                <p class="text-xs text-slate-500 mb-4">${hero.unit}</p>
-                            </div>
-                        </div>
-
-                        <!-- Шана -->
-                        <div class="border-t border-slate-800/80 pt-3 text-center">
-                            <span class="text-[11px] uppercase tracking-wider text-amber-500/90 font-medium">
-                                ${hero.motto}
-                            </span>
-                        </div>
-                    </div>
-                `;
-                grid.innerHTML += cardHtml;
-            });
-        }
-
-        // Пошук
-        document.getElementById('searchInput').addEventListener('input', (e) => {
-            const query = e.target.value.toLowerCase().trim();
-            filterAndSearch(query, currentFilter);
-        });
-
-        // Фільтрація
-        function filterCategory(category) {
-            currentFilter = category;
-            
-            // Оновлення кнопок
-            ['all', 'military', 'civilian'].forEach(cat => {
-                const btn = document.getElementById(`btn-${cat}`);
-                if (cat === category) {
-                    btn.className = 'px-4 py-2 text-xs md:text-sm font-medium rounded-lg bg-amber-500 text-slate-950';
-                } else {
-                    btn.className = 'px-4 py-2 text-xs md:text-sm font-medium rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700';
-                }
-            });
-
-            const query = document.getElementById('searchInput').value.toLowerCase().trim();
-            filterAndSearch(query, currentFilter);
-        }
-
-        function filterAndSearch(query, category) {
-            const filtered = heroesData.filter(hero => {
-                const matchesSearch = hero.name.toLowerCase().includes(query) || 
-                                     hero.callsign.toLowerCase().includes(query);
-                const matchesCategory = category === 'all' || hero.type === category;
-                return matchesSearch && matchesCategory;
-            });
-            renderCards(filtered);
-        }
-        // Ініціалізація
-        document.getElementById('year').textContent = new Date().getFullYear();
-        renderCards(heroesData);
-    </script>
+    <!-- Скрипт логіки -->
+    <script src="assets/js/script.js"></script>
 </body>
-</html>
+</html> 
