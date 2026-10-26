@@ -1,4 +1,4 @@
-// База даних героїв
+// База даних героїв та мешканців Бородянської громади
 const heroesData = [
     {
         id: 1,
@@ -51,19 +51,19 @@ function renderCards(data) {
 
     data.forEach(hero => {
         const isMilitary = hero.type === 'military';
-        const photoSrc = hero.photo ? hero.photo : 'https://via.placeholder.com/400x400/1e293b/94a3b8?text=Фото+відсутнє';
+        const photoSrc = hero.photo ? hero.photo : 'https://via.placeholder.com/400x400/0b1d3a/94a3b8?text=Фото+відсутнє';
 
         const cardHtml = `
-            <div class="hero-card bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between p-5 relative shadow-lg">
+            <div class="hero-card border rounded-2xl overflow-hidden flex flex-col justify-between p-5 relative shadow-lg">
                 
                 <!-- Значок -->
-                <div class="absolute top-4 right-4 bg-slate-950/80 p-2 rounded-full border border-slate-700/50">
+                <div class="absolute top-4 right-4 bg-[#071326]/90 p-2 rounded-full border border-[#1b365d]">
                     ${isMilitary ? '⚔️' : '🕯️'}
                 </div>
 
                 <div>
                     <!-- Фото -->
-                    <div class="w-28 h-28 mx-auto mb-4 rounded-full overflow-hidden border-2 ${isMilitary ? 'border-amber-500' : 'border-slate-600'} bg-slate-800">
+                    <div class="w-28 h-28 mx-auto mb-4 rounded-full overflow-hidden border-2 ${isMilitary ? 'border-amber-500' : 'border-slate-600'} bg-[#071326]">
                         <img src="${photoSrc}" alt="${hero.name}" class="w-full h-full object-cover grayscale contrast-125">
                     </div>
 
@@ -71,14 +71,14 @@ function renderCards(data) {
                     <div class="text-center">
                         <h3 class="text-lg font-bold text-slate-100 mb-1">${hero.name}</h3>
                         ${hero.callsign ? `<p class="text-xs text-amber-400 font-semibold mb-2">Позивний «${hero.callsign}»</p>` : ''}
-                        <p class="text-xs text-slate-400 font-medium mb-1">${hero.age} (${hero.dates})</p>
-                        <p class="text-xs text-slate-500 mb-4">${hero.unit}</p>
+                        <p class="text-xs text-slate-300 font-medium mb-1">${hero.age} (${hero.dates})</p>
+                        <p class="text-xs text-slate-400 mb-4">${hero.unit}</p>
                     </div>
                 </div>
 
                 <!-- Шана -->
-                <div class="border-t border-slate-800/80 pt-3 text-center">
-                    <span class="text-[11px] uppercase tracking-wider text-amber-500/90 font-medium">
+                <div class="border-t border-[#1b365d] pt-3 text-center">
+                    <span class="text-[11px] uppercase tracking-wider text-amber-400 font-medium">
                         ${hero.motto}
                     </span>
                 </div>
@@ -101,9 +101,9 @@ function filterCategory(category) {
     ['all', 'military', 'civilian'].forEach(cat => {
         const btn = document.getElementById(`btn-${cat}`);
         if (cat === category) {
-            btn.className = 'px-4 py-2 text-xs md:text-sm font-medium rounded-lg bg-amber-500 text-slate-950';
+            btn.className = 'px-4 py-2 text-xs md:text-sm font-medium rounded-lg bg-amber-500 text-[#071326] shadow';
         } else {
-            btn.className = 'px-4 py-2 text-xs md:text-sm font-medium rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700';
+            btn.className = 'px-4 py-2 text-xs md:text-sm font-medium rounded-lg bg-[#142d54] text-slate-300 hover:bg-[#1b365d] border border-[#1b365d]';
         }
     });
 
@@ -123,4 +123,4 @@ function filterAndSearch(query, category) {
 
 // Ініціалізація
 document.getElementById('year').textContent = new Date().getFullYear();
-renderCards(heroesData);
+renderCards(heroesData); 
