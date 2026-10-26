@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Книга Пам'яті — Наші Герої</title>
+    <!-- Tailwind CSS для стилів -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+        .hero-card {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .hero-card:hover {
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between">
+
+    <!-- Шапка сайту (Header) -->
+    <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-6 text-center">
+            <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-amber-500 uppercase flex items-center justify-center gap-3">
+                <span>🕯️</span> Книга Пам'яті
+            </h1>
+            <p class="text-slate-400 mt-2 text-sm md:text-base max-w-2xl mx-auto">
+                Вічна слава, честь та шана героям-захисникам і цивільним мешканцям, які віддали життя за Україну.
+            </p>
+        </div>
+    </header>
+
+    <!-- Основний контент -->
+    <main class="max-w-7xl mx-auto px-4 py-8 flex-grow w-full">
+        
+        <!-- Панель пошуку та фільтрів -->
+        <div class="mb-10 flex flex-col md:flex-row gap-4 justify-between items-center bg-slate-900 p-4 rounded-xl border border-slate-800">
+            <!-- Пошук -->
+            <div class="relative w-full md:w-96">
+                <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-slate-500"></i>
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="Пошук за прізвищем або позивним..." 
+                    class="w-full bg-slate-950 border border-slate-700 rounded-lg pl-10 pr-4 py-2 text-sm focus:outline-none focus:border-amber-500 transition-colors"
+                >
+            </div>
+
+            <!-- Фільтри -->
+            <div class="flex gap-2 w-full md:w-auto justify-center">
+                <button onclick="filterCategory('all')" id="btn-all" class="px-4 py-2 text-xs md:text-sm font-medium rounded-lg bg-amber-500 text-slate-950 hover:bg-amber-400 transition-colors">
+                    Усі
+                </button>
+                <button onclick="filterCategory('military')" id="btn-military" class="px-4 py-2 text-xs md:text-sm font-medium rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 transition-colors">
+                    Захисники
+                </button>
+                <button onclick="filterCategory('civilian')" id="btn-civilian" class="px-4 py-2 text-xs md:text-sm font-medium rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 transition-colors">
+                    Цивільні
+                </button>
+            </div>
+        </div>
+
+        <!-- Сітка карток -->
+        <div id="heroesGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <!-- Картки будуть згенеровані через JavaScript -->
+        </div>
+
+        <!-- Повідомлення, якщо нікого не знайдено -->
+        <div id="notFound" class="hidden text-center py-16 text-slate-500">
+            <p class="text-lg">За вказаним запитом нікого не знайдено.</p>
+        </div>
+    </main>
+
+    <!-- Підвал (Footer) -->
+    <footer class="border-t border-slate-800 bg-slate-950 py-6 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>© <span id="year"></span> Книга Пам'яті громади. Пам'ятаємо кожного.</p>
+        </div>
+    </footer>
+
+    <!-- Скрипт логіки та даних -->
+    <script>
+        // База даних (приклад кількох записів)
+        const heroesData = [
+            {
+                id: 1,
+                name: "Микола Бернацький",
+                type: "military",
+                callsign: "",
+                dates: "07.02.1983 - 04.11.2023",
+                age: "40 років",
+                unit: "Захисник України",
+                motto: "Вічна слава, честь та шана герою-захиснику!",
+                photo: "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=400&q=80" // Заглушка
+            },
+            {
+                id: 2,
+                name: "Олексій Постнов",
+                type: "military",
+                callsign: "Пірат",
+                dates: "21.10.1987 - 18.04.2023",
+                age: "35 років",
+                unit: "В/ч А4010 ЗСУ",
+                motto: "Вічна слава, честь та шана герою-захиснику!",
+                photo: "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=400&q=80"
+            },
+            {
+                id: 3,
+                name: "Григорій Салій",
+                type: "civilian",
+                callsign: "",
+                dates: "08.02.1959 - 18.03.2022",
+                age: "63 роки",
+                unit: "Цивільний мешканець",
+                motto: "Світла памʼять! Громада не забуде!",
+                photo: "" // Порожнє фото (відобразиться заглушка)
+            }
+        ];
+
+        let currentFilter = 'all';
+
+        function renderCards(data) {
+            const grid = document.getElementById('heroesGrid');
+            const notFound = document.getElementById('notFound');
+            grid.innerHTML = '';
+
+            if (data.length === 0) {
+                notFound.classList.remove('hidden');
+                return;
+            } else {
+                notFound.classList.add('hidden');
+            }
+
+            data.forEach(hero => {
+                const isMilitary = hero.type === 'military';
+                const photoSrc = hero.photo ? hero.photo : 'https://via.placeholder.com/400x400/1e293b/94a3b8?text=Фото+відсутнє';
+
+                const cardHtml = `
+                    <div class="hero-card bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between p-5 relative shadow-lg">
+                        
+                        <!-- Значок ЗСУ / Символ -->
+                        <div class="absolute top-4 right-4 bg-slate-950/80 p-2 rounded-full border border-slate-700/50">
+                            ${isMilitary ? '⚔️' : '🕯️'}
+                        </div>
+
+                        <div>
+                            <!-- Фото -->
+                            <div class="w-28 h-28 mx-auto mb-4 rounded-full overflow-hidden border-2 ${isMilitary ? 'border-amber-500' : 'border-slate-600'} bg-slate-800">
+                                <img src="${photoSrc}" alt="${hero.name}" class="w-full h-full object-cover grayscale contrast-125">
+                            </div>
+
+                            <!-- Інформація -->
+                            <div class="text-center">
+                                <h3 class="text-lg font-bold text-slate-100 mb-1">${hero.name}</h3>
+                                ${hero.callsign ? `<p class="text-xs text-amber-400 font-semibold mb-2">Позивний «${hero.callsign}»</p>` : ''}
+                                <p class="text-xs text-slate-400 font-medium mb-1">${hero.age} (${hero.dates})</p>
+                                <p class="text-xs text-slate-500 mb-4">${hero.unit}</p>
+                            </div>
+                        </div>
+
+                        <!-- Шана -->
+                        <div class="border-t border-slate-800/80 pt-3 text-center">
+                            <span class="text-[11px] uppercase tracking-wider text-amber-500/90 font-medium">
+                                ${hero.motto}
+                            </span>
+                        </div>
+                    </div>
+                `;
+                grid.innerHTML += cardHtml;
+            });
+        }
+
+        // Пошук
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase().trim();
+            filterAndSearch(query, currentFilter);
+        });
+
+        // Фільтрація
+        function filterCategory(category) {
+            currentFilter = category;
+            
+            // Оновлення кнопок
+            ['all', 'military', 'civilian'].forEach(cat => {
+                const btn = document.getElementById(`btn-${cat}`);
+                if (cat === category) {
+                    btn.className = 'px-4 py-2 text-xs md:text-sm font-medium rounded-lg bg-amber-500 text-slate-950';
+                } else {
+                    btn.className = 'px-4 py-2 text-xs md:text-sm font-medium rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700';
+                }
+            });
+
+            const query = document.getElementById('searchInput').value.toLowerCase().trim();
+            filterAndSearch(query, currentFilter);
+        }
+
+        function filterAndSearch(query, category) {
+            const filtered = heroesData.filter(hero => {
+                const matchesSearch = hero.name.toLowerCase().includes(query) || 
+                                     hero.callsign.toLowerCase().includes(query);
+                const matchesCategory = category === 'all' || hero.type === category;
+                return matchesSearch && matchesCategory;
+            });
+            renderCards(filtered);
+        }
+
+        // Ініціалізація
+        document.getElementById('year').textContent = new Date().getFullYear();
+        renderCards(heroesData);
+    </script>
+</body>
+</html>
