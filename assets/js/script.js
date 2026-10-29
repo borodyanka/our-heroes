@@ -1908,4 +1908,4 @@ function filterAndSearch(query, category) {
 
 // Ініціалізація
 document.getElementById('year').textContent = new Date().getFullYear();
-renderCards(heroesData);
+renderCards(heroesData); 
