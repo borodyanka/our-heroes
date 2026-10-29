@@ -1,6 +1,5 @@
 // База даних героїв та мешканців Бородянської громади
 const heroesData = [
-  
     {
         id: 1,
         name: "Абакумова Наталія Станіславівна",
@@ -1794,34 +1793,38 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=400&q=80"
     },
-    {
-        id: 1,
-        name: "Григорій Салій",
-        type: "civilian",
-        callsign: "",
-        dates: "08.02.1959 - 18.03.2022",
-        age: "63 роки",
-        unit: "Цивільний мешканець",
-        motto: "Світла памʼять! Громада не забуде!",
-        photo: "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=400&q=80"
-    }
 ];
 
 let currentFilter = 'all';
+let showAll = false; // Стан для розгортання списку
+
+function toggleShowMore() {
+    showAll = !showAll;
+    const query = document.getElementById('searchInput').value.toLowerCase().trim();
+    filterAndSearch(query, currentFilter);
+}
 
 function renderCards(data) {
     const grid = document.getElementById('heroesGrid');
     const notFound = document.getElementById('notFound');
+    const loadMoreContainer = document.getElementById('loadMoreContainer');
+    const loadMoreBtn = document.getElementById('loadMoreBtn');
+    
     grid.innerHTML = '';
 
     if (data.length === 0) {
         notFound.classList.remove('hidden');
+        loadMoreContainer.classList.add('hidden');
         return;
     } else {
         notFound.classList.add('hidden');
     }
 
-    data.forEach(hero => {
+    // Визначаємо скільки карток показувати (перші 8 або всі)
+    const limit = showAll ? data.length : 8;
+    const visibleData = data.slice(0, limit);
+
+    visibleData.forEach(hero => {
         const isMilitary = hero.type === 'military';
         const photoSrc = hero.photo ? hero.photo : 'https://via.placeholder.com/400x400/ededeb/777777?text=Фото+відсутнє';
 
@@ -1843,7 +1846,7 @@ function renderCards(data) {
                     <div class="text-center">
                         <h3 class="text-lg font-serif font-bold text-[#1a1a1a] mb-1">${hero.name}</h3>
                         ${hero.callsign ? `<p class="text-xs text-[#555555] font-semibold mb-2">Позивний «${hero.callsign}»</p>` : ''}
-                        <p class="text-xs text-[#666666] font-medium mb-1">${hero.age} (${hero.dates})</p>
+                        <p class="text-xs text-[#666666] font-medium mb-1">${hero.age} ${hero.dates ? '(' + hero.dates + ')' : ''}</p>
                         <p class="text-xs text-[#888888] mb-4">${hero.unit}</p>
                     </div>
                 </div>
@@ -1858,17 +1861,27 @@ function renderCards(data) {
         `;
         grid.innerHTML += cardHtml;
     });
+
+    // Керування кнопкою "Дивитися більше"
+    if (data.length <= 8) {
+        loadMoreContainer.classList.add('hidden');
+    } else {
+        loadMoreContainer.classList.remove('hidden');
+        loadMoreBtn.textContent = showAll ? "Згорнути список ▲" : `Дивитися більше карток (${data.length - 8} інших) ↓`;
+    }
 }
 
 // Пошук
 document.getElementById('searchInput').addEventListener('input', (e) => {
     const query = e.target.value.toLowerCase().trim();
+    showAll = true; // При пошуку автоматично розгортаємо результати для зручності
     filterAndSearch(query, currentFilter);
 });
 
 // Фільтрація
 function filterCategory(category) {
     currentFilter = category;
+    showAll = false; // При зміні категорії скидаємо ліміт до 8
     
     ['all', 'military', 'civilian'].forEach(cat => {
         const btn = document.getElementById(`btn-${cat}`);
