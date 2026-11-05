@@ -1,22 +1,68 @@
-/* Книжковий меморіальний дизайн (імітація друкованого видання та паперу) */
-body {
-    background-color: #f5f4ef; /* М'який теплий книжковий папір */
-    color: #1a1a1a;
+/* Книжковий меморіальний дизайн */
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
-/* Картки героїв (зберігають ідеальну форму, оформлені у книжковому стилі) */
+body {
+    background-color: #f5f4ef;
+    color: #1a1a1a;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* Фікс липкої шапки: гарантований непрозорий фон */
+header {
+    background-color: #f7f6f2 !important;
+    backdrop-filter: none;
+}
+
+/* Коли екран смартфона повертають горизонтально (landscape з малою висотою) — 
+   вимикаємо sticky, щоб шапка не перекривала екран */
+@media (max-height: 500px) and (orientation: landscape) {
+    header {
+        position: static !important;
+    }
+}
+
+/* Картки захисників */
 .hero-card {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     background-color: #ffffff;
-    border-color: #d8d6d0;
+    border: 1px solid #d8d6d0;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .hero-card:hover {
     transform: translateY(-3px);
     border-color: #999999;
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.06);
 }
 
+/* Зображення всередині карток */
+.hero-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    object-position: top center;
+    background-color: #e5e5e5;
+    display: block;
+}
+
+@media (max-width: 640px) {
+    .hero-card img {
+        height: 280px;
+    }
+}
+
+/* Інпути та кнопки */
 input, button {
     transition: all 0.2s ease;
-} 
+    -webkit-tap-highlight-color: transparent;
+}
