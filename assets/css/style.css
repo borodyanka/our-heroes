@@ -11,13 +11,12 @@ body {
     width: 100%;
 }
 
-/* Фікс липкої шапки: гарантований непрозорий фон */
+/* Липка шапка: гарантований непрозорий фон */
 header {
     background-color: #f7f6f2 !important;
-    backdrop-filter: none;
 }
 
-/* Коли екран смартфона повертають горизонтально — вимикаємо sticky */
+/* Коли смартфон повертають горизонтально — вимикаємо sticky, щоб шапка не перекривала екран */
 @media (max-height: 500px) and (orientation: landscape) {
     header {
         position: static !important;
@@ -29,46 +28,12 @@ header {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     background-color: #ffffff;
     border: 1px solid #d8d6d0;
-    border-radius: 0.75rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-    position: relative;
 }
 
 .hero-card:hover {
     transform: translateY(-3px);
     border-color: #999999;
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.06);
-}
-
-/* Фікс круглих фотографій військових */
-.hero-card img,
-.hero-photo {
-    width: 120px !important;
-    height: 120px !important;
-    min-width: 120px !important;
-    min-height: 120px !important;
-    max-width: 120px !important;
-    max-height: 120px !important;
-    border-radius: 50% !important;
-    object-fit: cover !important;
-    object-position: top center !important;
-    border: 2px solid #1a1a1a !important;
-    margin: 0 auto !important;
-    display: block !important;
-    background-color: #e5e5e5;
-}
-
-/* Контейнер для фотографії (якщо є обгортка) */
-.hero-img-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 12px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
 }
 
 /* Інпути та кнопки */
