@@ -1793,7 +1793,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Andrijchuk2-1793781838.webp"
     },
-  {
+    {
         id: 164,
         name: "Артюгін Андрій Сергійович",
         type: "military",
@@ -1804,7 +1804,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Artyugin3-1793782179.webp"
     },
-  {
+    {
         id: 165,
         name: "Архипенко Дмитро Володимирович",
         type: "military",
@@ -1815,7 +1815,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Arhypenko-1793784201.webp"
     },
-  {
+    {
         id: 166,
         name: "Асєєв Юрій Анатолійович",
         type: "military",
@@ -1826,7 +1826,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Asyeyev-YUrij-Anatolijovych-1793784235.webp"
     },
-  {
+    {
         id: 167,
         name: "Басенко Ігор Олександрович",
         type: "military",
@@ -1837,7 +1837,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Basenko-Igor-Oleksandrovych-1793784268.webp"
     },
-  {
+    {
         id: 168,
         name: "Берник Юрій Володимирович",
         type: "military",
@@ -1848,7 +1848,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Bernyk-1793784315.webp"
     },
-  {
+    {
         id: 169,
         name: "Бовтрук Олександр Вікторович",
         type: "military",
@@ -1859,7 +1859,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/BOVTRUK-1793784892.webp"
     },
-  {
+    {
         id: 170,
         name: "Борисенко Володимир Вікторович",
         type: "military",
@@ -1870,7 +1870,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Borysenko-1793785038.webp"
     },
-  {
+    {
         id: 171,
         name: "Бородай Богдан Вадимович",
         type: "military",
@@ -1881,7 +1881,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Borodaj-1793785387.webp"
     },
-  {
+    {
         id: 172,
         name: "Борщ Олександр Леонідович",
         type: "military",
@@ -1892,7 +1892,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Borshh-Oleksandr-Leonidovych-1793785503.webp"
     },
-  {
+    {
         id: 173,
         name: "Брана Олексій Іванович",
         type: "military",
@@ -1903,7 +1903,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/BRANA-1793785722.webp"
     },
-  {
+    {
         id: 174,
         name: "Бурлаченко Тарас Миколайович",
         type: "military",
@@ -1914,7 +1914,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Burlachenko-1793785773.webp"
     },
-  {
+    {
         id: 175,
         name: "Буткевич Микола Михайлович",
         type: "military",
@@ -1925,7 +1925,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Butkevych-1793785922.webp"
     },
-  {
+    {
         id: 176,
         name: "Василенко Руслан Васильович",
         type: "military",
@@ -1936,7 +1936,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Vasylenko-Ruslan-Vasylovych-1793793941.webp"
     },
-  {
+    {
         id: 177,
         name: "Вашуленко Олексій Володимирович",
         type: "military",
@@ -1947,7 +1947,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Vashulenko-2--1793794246.webp"
     },
-  {
+    {
         id: 178,
         name: "Вашуленко Микола Анатолійович",
         type: "military",
@@ -1958,7 +1958,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Vashulenko-1793794370.webp"
     },
-  {
+    {
         id: 179,
         name: "Воронько Олег Петрович",
         type: "military",
@@ -1969,7 +1969,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Voronko-1793794524.webp"
     },
-  {
+    {
         id: 180,
         name: "Галака Олег Анатолійович",
         type: "military",
@@ -1980,7 +1980,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Galaka-1793794630.webp"
     },
-  {
+    {
         id: 181,
         name: "Герасименко Дмитро Романович",
         type: "military",
@@ -1991,7 +1991,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Gerasymenko-1793794726.webp"
     },
-  {
+    {
         id: 182,
         name: "Герасимов Богдан Олександрович",
         type: "military",
@@ -2002,7 +2002,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Gerasymov-1793794830.webp"
     },
-  {
+    {
         id: 183,
         name: "Голух Андрій Олександрович",
         type: "military",
@@ -2013,7 +2013,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Goluh-Andrij-Oleksandrovych-1793794902.webp"
     },
-  {
+    {
         id: 184,
         name: "Данилевич Володимир Вікторович",
         type: "military",
@@ -2024,7 +2024,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Danylevych-1793794969.webp"
     },
-  {
+    {
         id: 185,
         name: "Демешок Сергій Михайлович",
         type: "military",
@@ -2035,7 +2035,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Demeshok-Sergij-Mykolajovych-1793795046.webp"
     },
-  {
+    {
         id: 186,
         name: "Денисюк Дмитро Вікторович",
         type: "military",
@@ -2046,7 +2046,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Denysyuk-Dmytro-Viktorovych-1793795104.webp"
     },
-  {
+    {
         id: 187,
         name: "Дубовенко Сергій Сергійович",
         type: "military",
@@ -2057,7 +2057,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Dubovenko-1793795340.webp"
     },
-  {
+    {
         id: 188,
         name: "Єфремов Костянтин Володимирович",
         type: "military",
@@ -2068,7 +2068,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/YEfremov-1793795412.webp"
     },
-  {
+    {
         id: 189,
         name: "Журба Володимир Васильович",
         type: "military",
@@ -2079,7 +2079,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/ZHurba-1793797749.webp"
     },
-  {
+    {
         id: 190,
         name: "Захарченко Олександр Миколайович",
         type: "military",
@@ -2090,7 +2090,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Zaharchenko-1793797754.webp"
     },
-  {
+    {
         id: 191,
         name: "Зеленський Сергій Олександрович",
         type: "military",
@@ -2101,7 +2101,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Zelenskyj-Sergij-Oleksandrovych-1793797745.webp"
     },
-  {
+    {
         id: 192,
         name: "Зінченко Олексій Михайлович",
         type: "military",
@@ -2112,7 +2112,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Zinchenko-Oleksij-Myhajlovych-1793797740.webp"
     },
-  {
+    {
         id: 193,
         name: "Івахненко Іван Миколайович",
         type: "military",
@@ -2123,7 +2123,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Ivahnenko-1793797734.webp"
     },
-  {
+    {
         id: 194,
         name: "Кайданович Сергій Валерійович",
         type: "military",
@@ -2134,7 +2134,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Kajdanovych-1793797729.webp"
     },
-  {
+    {
         id: 195,
         name: "Каленик Ілля Вікторович",
         type: "military",
@@ -2145,7 +2145,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Kalenyk-1793797910.webp"
     },
-  {
+    {
         id: 196,
         name: "Калініченко Геннадій Миколайович",
         type: "military",
@@ -2156,7 +2156,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Kalinichenko-1793797905.webp"
     },
-  {
+    {
         id: 197,
         name: "Кириленко Микола Петрович",
         type: "military",
@@ -2167,7 +2167,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Kyrylenko-2-1793797900.webp"
     },
-  {
+    {
         id: 198,
         name: "Клименко Олександр Олександрович",
         type: "military",
@@ -2178,7 +2178,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Klymenko-1793799372.webp"
     },
-  {
+    {
         id: 199,
         name: "Ковальчук Артем Леонідович",
         type: "military",
@@ -2189,7 +2189,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Kovalchuk-Artem-1793799454.webp"
     },
-  {
+    {
         id: 200,
         name: "Ковальчук Олег Васильович",
         type: "military",
@@ -2200,7 +2200,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Kovalchuk-1793799538.webp"
     },
-  {
+    {
         id: 201,
         name: "Кожедуб Олександр Миколайович",
         type: "military",
@@ -2211,7 +2211,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Kozhedub-1793799575.webp"
     },
-  {
+    {
         id: 202,
         name: "Козленко Василь Миколайович",
         type: "military",
@@ -2222,7 +2222,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Kozlenko-Vasyl-Mykolajovych-1793799682.webp"
     },
-  {
+    {
         id: 203,
         name: "Козленко Олексій Миколайович",
         type: "military",
@@ -2233,7 +2233,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Kozlenko-1793799743.webp"
     },
-  {
+    {
         id: 204,
         name: "Кондратюк Богдан Сергійович",
         type: "military",
@@ -2244,7 +2244,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Kondratyuk-1793799789.webp"
     },
-  {
+    {
         id: 205,
         name: "Косенко Андрій Юрійович",
         type: "military",
@@ -2255,7 +2255,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Kosenko-1793799869.webp"
     },
-  {
+    {
         id: 206,
         name: "Костюченко Вадим Миколайович",
         type: "military",
@@ -2266,7 +2266,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/kostyuchenko-1793799919.webp"
     },
-  {
+    {
         id: 207,
         name: "Косян Борис Іванович",
         type: "military",
@@ -2277,7 +2277,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Kosyan-1793800031.webp"
     },
-  {
+    {
         id: 208,
         name: "Котов Дмитро Сергійович",
         type: "military",
@@ -2288,7 +2288,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Kotov-1793800090.webp"
     },
-  {
+    {
         id: 209,
         name: "Курінний Олександр Петрович",
         type: "military",
@@ -2299,7 +2299,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Kurinnyj-1793800204.webp"
     },
-  {
+    {
         id: 210,
         name: "Кучеров Ігор Васильович",
         type: "military",
@@ -2310,7 +2310,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Kucherov-1793872012.webp"
     },
-  {
+    {
         id: 211,
         name: "Лазебний Сергій Анатолійович",
         type: "military",
@@ -2321,7 +2321,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Lazebnyj-Sergij-Anatolijovych-1793872092.webp"
     },
-  {
+    {
         id: 212,
         name: "Лазебний Микола Васильович",
         type: "military",
@@ -2332,7 +2332,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Lazebnyj-1793872150.webp"
     },
-  {
+    {
         id: 213,
         name: "Лазір Іван Ярославович",
         type: "military",
@@ -2343,7 +2343,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Lazir-kopyya-1793872311.webp"
     },
-  {
+    {
         id: 214,
         name: "Леоненко Віталій Васильович",
         type: "military",
@@ -2354,7 +2354,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Leonenko-1793872408.webp"
     },
-  {
+    {
         id: 215,
         name: "Лещенко Іван Павлович",
         type: "military",
@@ -2365,7 +2365,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Leshhenko-1793872493.webp"
     },
-  {
+    {
         id: 216,
         name: "Лічман Віталій Михайлович",
         type: "military",
@@ -2376,7 +2376,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Lichman-Vitalij-Myhajlovych-1793872548.webp"
     },
-  {
+    {
         id: 217,
         name: "Лутченко Андрій Іванович",
         type: "military",
@@ -2387,7 +2387,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Lutchenko-Andrij-Ivanovych-1793873952.webp"
     },
-  {
+    {
         id: 218,
         name: "Ляшевський Олександр Анатолійович",
         type: "military",
@@ -2398,7 +2398,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Lyashevskyj_Oleksandr_Anatolijovych-1793874098.webp"
     },
-  {
+    {
         id: 219,
         name: "Ляшкевич Даніїл Вікторович",
         type: "military",
@@ -2409,7 +2409,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Lyashkevych-1793874160.webp"
     },
-{
+    {
         id: 220,
         name: "Максюта Володимир Юрійович",
         type: "military",
@@ -2420,7 +2420,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Maksyuta-1793874223.webp"
     },
-  {
+    {
         id: 221,
         name: "Маслюківський Сергій Сергійович",
         type: "military",
@@ -2431,7 +2431,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Maslyukivskyj-1793874321.webp"
     },
-  {
+    {
         id: 222,
         name: "Медведєв Олексій Леонардович",
         type: "military",
@@ -2442,7 +2442,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Medvedev-1793874372.webp"
     },
-  {
+    {
         id: 223,
         name: "Михальченко Сергій Олександрович",
         type: "military",
@@ -2453,7 +2453,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Myhalchenko-1793874433.webp"
     },
-  {
+    {
         id: 224,
         name: "Могильний Анатолій Миколайович",
         type: "military",
@@ -2464,7 +2464,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/mogylnyj-1793874482.webp"
     },
-  {
+    {
         id: 225,
         name: "Науменко Олександр Анатолійович",
         type: "military",
@@ -2475,7 +2475,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Naumenko-1793874531.webp"
     },
-  {
+    {
         id: 226,
         name: "Неда Дмитро Васильович",
         type: "military",
@@ -2486,7 +2486,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Neda-1793874587.webp"
     },
-  {
+    {
         id: 227,
         name: "Нікітін Сергій Юрійович",
         type: "military",
@@ -2497,7 +2497,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Nikitin-Sergij-YUrijovych-1793874635.webp"
     },
-  {
+    {
         id: 228,
         name: "Носов Віталій Васильович",
         type: "military",
@@ -2508,7 +2508,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/NOSOV-1793874680.webp"
     },
-  {
+    {
         id: 229,
         name: "Остапченко Іван Миколайович",
         type: "military",
@@ -2519,7 +2519,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Ostapchenko-1793874738.webp"
     },
-  {
+    {
         id: 230,
         name: "Патракєєв Роман Анатолійович",
         type: "military",
@@ -2530,7 +2530,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Patrekyeyev-Roman-Anatolijovych-1793874787.webp"
     },
-  {
+    {
         id: 231,
         name: "Пендзей Тетяна Миронівна",
         type: "military",
@@ -2541,7 +2541,7 @@ const heroesData = [
         motto: "Вічна слава та шана героїні-захисниці!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Pendzej-Tetyana-Myronivna-1793874931.webp"
     },
-  {
+    {
         id: 232,
         name: "Прус Євгеній Миколайович",
         type: "military",
@@ -2552,7 +2552,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/prus-1793875979.webp"
     },
-  {
+    {
         id: 233,
         name: "Рабош Данило Вікторович",
         type: "military",
@@ -2563,7 +2563,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Rabosh-1793876032.webp"
     },
-  {
+    {
         id: 234,
         name: "Рафальський Станіслав Антонович",
         type: "military",
@@ -2574,7 +2574,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Rafalskyj-1793876107.webp"
     },
-  {
+    {
         id: 235,
         name: "Рибка Роман Миколайович",
         type: "military",
@@ -2585,7 +2585,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Rybka-Roman-Mykolajovych-1793876176.webp"
     },
-  {
+    {
         id: 236,
         name: "Романенко Володимир Миколайович",
         type: "military",
@@ -2596,7 +2596,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Romanenko-1793876231.webp"
     },
-  {
+    {
         id: 237,
         name: "Романовський Володимир Олегович",
         type: "military",
@@ -2607,7 +2607,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Romanovskyj-1793876325.webp"
     },
-  {
+    {
         id: 238,
         name: "Романюк Сергій Васильович",
         type: "military",
@@ -2618,7 +2618,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Romanyuk-1793876377.webp"
     },
-  {
+    {
         id: 239,
         name: "Рудніченко Олександр Григорович",
         type: "military",
@@ -2629,7 +2629,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Rudnichenko-1793876441.webp"
     },
-  {
+    {
         id: 240,
         name: "Рудь Михайло Володимирович",
         type: "military",
@@ -2640,7 +2640,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/RUD-Myhajlo-Volodymyrovych-1793876486.webp"
     },
-  {
+    {
         id: 241,
         name: "Савченко Ігор Володимирович",
         type: "military",
@@ -2651,7 +2651,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Savchenko-1793878293.webp"
     },
-  {
+    {
         id: 242,
         name: "Семенік Віктор Григорович",
         type: "military",
@@ -2662,7 +2662,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Semenik-Viktor-Grygorovych-1793878347.webp"
     },
-  {
+    {
         id: 243,
         name: "Сергєєв Павло Валерійович",
         type: "military",
@@ -2673,7 +2673,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Sergeev-1793878402.webp"
     },
-  {
+    {
         id: 244,
         name: "Скринник Дмитро Анатолійович",
         type: "military",
@@ -2684,7 +2684,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Skrynnyk-1793878455.webp"
     },
-  {
+    {
         id: 245,
         name: "Слухай Сергій Володимирович",
         type: "military",
@@ -2695,7 +2695,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Sluhaj-1793878503.webp"
     },
-  {
+    {
         id: 246,
         name: "Тичина Владислав Анатолійович",
         type: "military",
@@ -2706,7 +2706,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Tychyna-1793878559.webp"
     },
-  {
+    {
         id: 247,
         name: "Тищук Роман Олександрович",
         type: "military",
@@ -2717,7 +2717,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Tyshhuk-1793878629.webp"
     },
-  {
+    {
         id: 248,
         name: "Товстенко Микола Сергійович",
         type: "military",
@@ -2728,7 +2728,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Tovstenko-1793878673.webp"
     },
-  {
+    {
         id: 249,
         name: "Усік Олексій Ігорович",
         type: "military",
@@ -2739,7 +2739,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/USIK-2-1793878789.webp"
     },
-  {
+    {
         id: 250,
         name: "Ус-Цимбалюк Роман Олегович",
         type: "military",
@@ -2750,7 +2750,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Us-TSymbalyuk-Roman-Olegovych-1793878847.webp"
     },
-  {
+    {
         id: 251,
         name: "Федієнко Іван Володимирович",
         type: "military",
@@ -2761,7 +2761,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Fediyenko-1793878911.webp"
     },
-  {
+    {
         id: 252,
         name: "Фещенко Андрій Іванович",
         type: "military",
@@ -2772,7 +2772,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Feshhenko-1793878958.webp"
     },
-  {
+    {
         id: 253,
         name: "Ходаківський Ігор Олександрович",
         type: "military",
@@ -2783,7 +2783,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Hodakivskyj-1793879001.webp"
     },
-  {
+    {
         id: 254,
         name: "Худенко Андрій Васильович",
         type: "military",
@@ -2794,7 +2794,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/Hudenko-Andrij-Vasylovych-1793879063.webp"
     },
-  {
+    {
         id: 255,
         name: "Чубатюк Олександр Віталійович",
         type: "military",
@@ -2805,7 +2805,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/CHubatyuk-Oleksandr-Vitalijovych-1793879113.webp"
     },
-  {
+    {
         id: 256,
         name: "Шевчук Роман Володимирович",
         type: "military",
@@ -2816,7 +2816,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/SHevchuk-1793879169.webp"
     },
-  {
+    {
         id: 257,
         name: "Шльонський Микола Миколайович",
         type: "military",
@@ -2827,7 +2827,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/SHlonskyj-1793879249.webp"
     },
-  {
+    {
         id: 258,
         name: "Шульгач Сергій Олександрович",
         type: "military",
@@ -2838,7 +2838,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/SHulgach-1793879294.webp"
     },
-  {
+    {
         id: 259,
         name: "Щербина Михайло Васильович",
         type: "military",
@@ -2849,7 +2849,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/SHHerbyna-1793879348.webp"
     },
-  {
+    {
         id: 260,
         name: "Юрак Михайло Іванович",
         type: "military",
@@ -2860,7 +2860,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/YURAK-1793879407.webp"
     },
-  {
+    {
         id: 261,
         name: "Ющенко Олександр Миколайович",
         type: "military",
@@ -2871,7 +2871,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/YUshhenko-1793879458.webp"
     },
-  {
+    {
         id: 262,
         name: "Яковчук Віталій Володимирович",
         type: "military",
@@ -2882,7 +2882,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/YAkovchuk-Vitalij-Volodymyrovych-1793879512.webp"
     },
-  {
+    {
         id: 263,
         name: "Янченко Олександр Сергійович",
         type: "military",
@@ -2893,7 +2893,7 @@ const heroesData = [
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/YAnchenko-1793879567.webp"
     },
-  {
+    {
         id: 264,
         name: "Ярошенко Ігор Петрович",
         type: "military",
@@ -2903,9 +2903,11 @@ const heroesData = [
         unit: "Солдат. Загинув, захищаючи територіальну цілісність України в боях з російськими окупантами у смт Бородянка, район «РЕС». Нагороджений медалями «За участь в антитерористичній операції», «Учасник АТО», «Ветеран війни», «За оборону Бородянки».",
         motto: "Вічна слава та шана герою-захиснику!",
         photo: "https://bsr.gov.ua/wp-content/uploads/2026/11/YAroshenko-1793879618.webp"
-    },
- 
+    }
 ];
+
+// ОДРАЗУ СОРТУЄМО ВЕСЬ МАСИВ ЗА АЛФАВІТОМ ПРИ ЗАВАНТАЖЕННІ
+heroesData.sort((a, b) => a.name.localeCompare(b.name, 'uk', { sensitivity: 'base' }));
 
 let currentFilter = 'all';
 let showAll = false; // Стан для розгортання списку
@@ -2932,8 +2934,8 @@ function renderCards(data) {
         notFound.classList.add('hidden');
     }
 
-    // Визначаємо скільки карток показувати (перші 8 або всі)
-    const limit = showAll ? data.length : 8;
+// Якщо це вкладка "Усі записи" і список не розгорнуто — показуємо 8, інакше — весь список
+    const limit = (currentFilter === 'all' && !showAll) ? 8 : data.length;
     const visibleData = data.slice(0, limit);
 
     visibleData.forEach(hero => {
@@ -2974,13 +2976,14 @@ function renderCards(data) {
         grid.innerHTML += cardHtml;
     });
 
-// Керування кнопкою "Дивитися більше"
-    if (data.length <= 8) {
-        loadMoreContainer.classList.add('hidden');
-    } else {
+    // Керування кнопкою "Дивитися більше": активна ТІЛЬКИ для "Усі записи"
+    if (currentFilter === 'all' && data.length > 8) {
         loadMoreContainer.classList.remove('hidden');
         loadMoreBtn.textContent = showAll ? "Згорнути список ▲" : `Дивитися більше карток (${data.length - 8} інших) ↓`;
+    } else {
+        loadMoreContainer.classList.add('hidden');
     }
+}
 
 // Пошук
 document.getElementById('searchInput').addEventListener('input', (e) => {
@@ -3008,7 +3011,6 @@ function filterCategory(category) {
 }
 
 function filterAndSearch(query, category) {
-    // 1. Фільтруємо за пошуком та категорією
     const filtered = heroesData.filter(hero => {
         const matchesSearch = hero.name.toLowerCase().includes(query) || 
                              hero.callsign.toLowerCase().includes(query);
@@ -3016,13 +3018,11 @@ function filterAndSearch(query, category) {
         return matchesSearch && matchesCategory;
     });
 
-    // 2. Сортуємо результати в суворому алфавітному порядку за ім'ям (українською абеткою)
     filtered.sort((a, b) => a.name.localeCompare(b.name, 'uk', { sensitivity: 'base' }));
 
     renderCards(filtered);
 }
-// Ініціалізація: одразу сортуємо весь масив за алфавітом перед першим рендером
-heroesData.sort((a, b) => a.name.localeCompare(b.name, 'uk', { sensitivity: 'base' }));
 
+// Ініціалізація
 document.getElementById('year').textContent = new Date().getFullYear();
 renderCards(heroesData);
