@@ -29,7 +29,7 @@
     <!-- Книжкова шапка сайту: Незламні серця Бородянщини -->
     <header class="border-b border-[#d8d6d0] bg-[#f7f6f2] sticky top-0 z-40 shadow-sm transition-all duration-200">
         <div class="max-w-7xl mx-auto px-4 py-3 sm:py-4 flex flex-row items-center justify-center gap-3 sm:gap-5 text-left">
-            <!-- Збільшений герб Бородянської громади -->
+            <!-- Герб Бородянської громади -->
             <img 
                 src="gerb1.png" 
                 alt="Герб Бородянської селищної територіальної громади" 
@@ -107,8 +107,8 @@
         <div class="mt-12 sm:mt-16 grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 border-t border-[#d8d6d0] pt-8 sm:pt-10 font-sans">
             
             <!-- Блок 1: Військові -->
-            <div class="bg-[#fcfbfa] p-5 sm:p-6 rounded-xl border border-[#d8d6d0] shadow-sm space-y-3 flex flex-col justify-between">
-                <div>
+            <div class="bg-[#fcfbfa] p-5 sm:p-6 rounded-xl border border-[#d8d6d0] shadow-sm space-y-4 flex flex-col justify-between text-left">
+                <div class="text-left">
                     <h3 class="text-[#1a1a1a] font-serif font-bold text-sm uppercase flex items-center gap-2 mb-2">
                         <i class="fa-solid fa-shield-halved text-[#666666]"></i> Інформація про військових
                     </h3>
@@ -124,29 +124,23 @@
                 </a>
             </div>
 
-            <!-- Блок 2: Цивільні (з прямою адресою Itkt@i.ua та кнопкою копіювання) -->
-            <div class="bg-[#fcfbfa] p-5 sm:p-6 rounded-xl border border-[#d8d6d0] shadow-sm space-y-3 flex flex-col justify-between">
-                <div>
+            <!-- Блок 2: Цивільні (з вирівнюванням по лівому краю без зайвого тексту адреси) -->
+            <div class="bg-[#fcfbfa] p-5 sm:p-6 rounded-xl border border-[#d8d6d0] shadow-sm space-y-4 flex flex-col justify-between text-left">
+                <div class="text-left">
                     <h3 class="text-[#1a1a1a] font-serif font-bold text-sm uppercase flex items-center gap-2 mb-2">
                         <i class="fa-solid fa-candles text-[#666666]"></i> Інформація про цивільних
                     </h3>
-                    <p class="text-xs sm:text-sm text-[#666666] leading-relaxed mb-3">
-                        Направляйте інформацію та фотографії цивільних мешканців громади на електронну адресу:
+                    <p class="text-xs sm:text-sm text-[#666666] leading-relaxed">
+                        Направляйте інформацію та фотографії цивільних мешканців громади на електронну пошту:
                     </p>
-                    <ul class="text-xs font-medium text-[#333333] space-y-1 mb-4 break-all">
-                        <li>
-                            <i class="fa-solid fa-envelope mr-1.5 text-[#777777]"></i> 
-                            <a href="mailto:Itkt@i.ua" class="hover:underline font-semibold text-[#1a1a1a]">Itkt@i.ua</a>
-                        </li>
-                    </ul>
                 </div>
 
-                <!-- Кнопки: для поштового клієнта та копіювання для браузера -->
-                <div class="flex flex-col sm:flex-row gap-2">
-                    <a href="mailto:Itkt@i.ua?subject=Книга%20Пам'яті%20-%20Цивільні" class="flex-1 text-center bg-[#444444] hover:bg-[#2c2c2c] text-white text-xs uppercase font-medium py-2.5 px-4 rounded-lg transition-colors">
+                <!-- Кнопки: для поштового клієнта та копіювання адреси -->
+                <div class="flex flex-col sm:flex-row gap-2 pt-2">
+                    <a href="mailto:ltkt@i.ua?subject=Книга%20Пам'яті%20-%20Цивільні" class="flex-1 text-center bg-[#444444] hover:bg-[#2c2c2c] text-white text-xs uppercase font-medium py-2.5 px-4 rounded-lg transition-colors">
                         <i class="fa-solid fa-paper-plane mr-1.5"></i> Надіслати
                     </a>
-                    <button type="button" onclick="copyEmail(this, 'Itkt@i.ua')" class="flex-1 text-center bg-white hover:bg-[#ededeb] text-[#333333] border border-[#cccccc] text-xs uppercase font-medium py-2.5 px-4 rounded-lg transition-colors">
+                    <button type="button" onclick="copyEmail(this, 'ltkt@i.ua')" class="flex-1 text-center bg-white hover:bg-[#ededeb] text-[#333333] border border-[#cccccc] text-xs uppercase font-medium py-2.5 px-4 rounded-lg transition-colors">
                         <i class="fa-regular fa-copy mr-1.5"></i> Скопіювати пошту
                     </button>
                 </div>
