@@ -2974,14 +2974,13 @@ function renderCards(data) {
         grid.innerHTML += cardHtml;
     });
 
-    // Керування кнопкою "Дивитися більше"
-    if (data.length <= 8) {
-        loadMoreContainer.classList.add('hidden');
-    } else {
+// Керування кнопкою "Дивитися більше": активна ТІЛЬКИ для "Усі записи" (currentFilter === 'all')
+    if (currentFilter === 'all' && data.length > 8) {
         loadMoreContainer.classList.remove('hidden');
         loadMoreBtn.textContent = showAll ? "Згорнути список ▲" : `Дивитися більше карток (${data.length - 8} інших) ↓`;
+    } else {
+        loadMoreContainer.classList.add('hidden');
     }
-}
 
 // Пошук
 document.getElementById('searchInput').addEventListener('input', (e) => {
