@@ -3009,15 +3009,19 @@ function filterCategory(category) {
 }
 
 function filterAndSearch(query, category) {
+    // 1. Фільтруємо за пошуком та категорією
     const filtered = heroesData.filter(hero => {
         const matchesSearch = hero.name.toLowerCase().includes(query) || 
                              hero.callsign.toLowerCase().includes(query);
         const matchesCategory = category === 'all' || hero.type === category;
         return matchesSearch && matchesCategory;
     });
+
+    // 2. Сортуємо результати в суворому алфавітному порядку за ім'ям (українською абеткою)
+    filtered.sort((a, b) => a.name.localeCompare(b.name, 'uk', { sensitivity: 'base' }));
+
     renderCards(filtered);
 }
-
 // Ініціалізація
 document.getElementById('year').textContent = new Date().getFullYear();
 renderCards(heroesData); 
