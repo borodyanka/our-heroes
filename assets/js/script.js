@@ -3022,6 +3022,8 @@ function filterAndSearch(query, category) {
 
     renderCards(filtered);
 }
-// Ініціалізація
+// Ініціалізація: одразу сортуємо весь масив за алфавітом перед першим рендером
+heroesData.sort((a, b) => a.name.localeCompare(b.name, 'uk', { sensitivity: 'base' }));
+
 document.getElementById('year').textContent = new Date().getFullYear();
-renderCards(heroesData); 
+renderCards(heroesData);
