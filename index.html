@@ -124,7 +124,7 @@
                 </a>
             </div>
 
-            <!-- Блок 2: Цивільні -->
+            <!-- Блок 2: Цивільні (з прямою адресою Itkt@i.ua та кнопкою копіювання) -->
             <div class="bg-[#fcfbfa] p-5 sm:p-6 rounded-xl border border-[#d8d6d0] shadow-sm space-y-3 flex flex-col justify-between">
                 <div>
                     <h3 class="text-[#1a1a1a] font-serif font-bold text-sm uppercase flex items-center gap-2 mb-2">
@@ -134,12 +134,22 @@
                         Направляйте інформацію та фотографії цивільних мешканців громади на електронну адресу:
                     </p>
                     <ul class="text-xs font-medium text-[#333333] space-y-1 mb-4 break-all">
-                        <li><i class="fa-solid fa-envelope mr-1.5 text-[#777777]"></i> <a href="mailto:civilian@bsr.gov.ua" class="hover:underline">civilian@bsr.gov.ua</a></li>
+                        <li>
+                            <i class="fa-solid fa-envelope mr-1.5 text-[#777777]"></i> 
+                            <a href="mailto:Itkt@i.ua" class="hover:underline font-semibold text-[#1a1a1a]">Itkt@i.ua</a>
+                        </li>
                     </ul>
                 </div>
-                <a href="mailto:civilian@bsr.gov.ua?subject=Книга%20Пам'яті%20-%20Цивільні" class="inline-block text-center bg-[#444444] hover:bg-[#2c2c2c] text-white text-xs uppercase font-medium py-2.5 px-4 rounded-lg transition-colors">
-                    <i class="fa-solid fa-paper-plane mr-1.5"></i> Надіслати інформацію
-                </a>
+
+                <!-- Кнопки: для поштового клієнта та копіювання для браузера -->
+                <div class="flex flex-col sm:flex-row gap-2">
+                    <a href="mailto:Itkt@i.ua?subject=Книга%20Пам'яті%20-%20Цивільні" class="flex-1 text-center bg-[#444444] hover:bg-[#2c2c2c] text-white text-xs uppercase font-medium py-2.5 px-4 rounded-lg transition-colors">
+                        <i class="fa-solid fa-paper-plane mr-1.5"></i> Надіслати
+                    </a>
+                    <button type="button" onclick="copyEmail(this, 'Itkt@i.ua')" class="flex-1 text-center bg-white hover:bg-[#ededeb] text-[#333333] border border-[#cccccc] text-xs uppercase font-medium py-2.5 px-4 rounded-lg transition-colors">
+                        <i class="fa-regular fa-copy mr-1.5"></i> Скопіювати пошту
+                    </button>
+                </div>
             </div>
 
         </div>
@@ -166,5 +176,22 @@
 
     <!-- Скрипт логіки -->
     <script src="assets/js/script.js"></script>
+
+    <!-- Скрипт копіювання електронної пошти в буфер -->
+    <script>
+        function copyEmail(button, email) {
+            navigator.clipboard.writeText(email).then(() => {
+                const originalHtml = button.innerHTML;
+                button.innerHTML = '<i class="fa-solid fa-check mr-1.5 text-green-600"></i> Скопійовано!';
+                button.classList.add('border-green-600', 'text-green-700');
+                setTimeout(() => {
+                    button.innerHTML = originalHtml;
+                    button.classList.remove('border-green-600', 'text-green-700');
+                }, 2000);
+            }).catch(() => {
+                prompt("Скопіюйте адресу пошти вручну:", email);
+            });
+        }
+    </script>
 </body>
 </html>
